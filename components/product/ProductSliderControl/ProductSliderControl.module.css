@@ -1,0 +1,35 @@
+.control {
+  @apply bg-transparent flex flex-row
+  border-accent-0 border text-accent-0 z-30 shadow-xl select-none;
+  height: 48px;
+}
+
+.leftControl {
+  @apply px-0 cursor-pointer absolute bottom-0 top-0 m-auto left-10 text-primary;
+  transition: all 0.2s ease;
+  height: 50px;
+}
+
+.rightControl {
+  @apply px-0 cursor-pointer absolute bottom-0 top-0 right-10 m-auto text-primary;
+  transition: all 0.2s ease;
+  height: 50px;
+}
+
+.leftControl:hover,
+.rightControl:hover {
+  color: var(--violet-dark);
+}
+
+.leftControl:focus,
+.rightControl:focus {
+  @apply outline-none border-none;
+}
+
+.rightControl {
+  @apply border-0 border-accent-0;
+}
+
+.leftControl {
+  margin-right: -1px;
+}

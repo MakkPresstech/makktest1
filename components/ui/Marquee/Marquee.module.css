@@ -1,0 +1,24 @@
+.root {
+  @apply w-full min-w-full relative flex flex-row items-center overflow-hidden py-0;
+  max-height: inherit;
+  margin-bottom: 4rem;
+}
+
+.root > div { 
+  max-height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.root > div > * > *:nth-child(2) * {
+  max-height: 100%;
+}
+
+.primary {
+  @apply bg-accent-0;
+}
+
+.secondary {
+  @apply bg-accent-0; 
+}
+
